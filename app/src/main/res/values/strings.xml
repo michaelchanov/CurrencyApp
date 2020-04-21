@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Currency</string>
+    <string name="currency">%s рублей  </string>
+    <string name="title">Текущий курс рубля</string>
+    <string name="dollarBtn">Доллар</string>
+    <string name="euroBtn">Евро</string>
+    <string name="currenyFragmentTitleUsd">USD</string>
+    <string name="currenyFragmentTitleEUR">EUR</string>
+
+</resources>
