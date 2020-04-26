@@ -40,6 +40,12 @@
         android:layout_height="wrap_content"
         android:text="@string/euroBtn"
         />
+    <Button
+        android:id="@+id/webViewBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/web"
+        />
 
 
 

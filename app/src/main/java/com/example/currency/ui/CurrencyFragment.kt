@@ -32,7 +32,7 @@ class CurrencyFragment : Fragment(), CoroutineScope {
         when (arguments?.getInt("key") ?: "") {
             1 -> launch {
                 val curency = repository.getCurrency().await()
-                
+
                 loader.visibility=View.GONE
                 textAndImage.visibility=View.VISIBLE
                 currencyRate.visibility=View.VISIBLE

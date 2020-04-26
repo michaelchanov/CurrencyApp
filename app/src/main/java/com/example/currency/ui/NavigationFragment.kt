@@ -19,6 +19,7 @@ class NavigationFragment : Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val currencyFragment = CurrencyFragment()
+        val webViewFragment = WebViewFragment()
 
         dollarBtn.setOnClickListener {
             currencyFragment.arguments=Bundle().also {
@@ -37,6 +38,13 @@ class NavigationFragment : Fragment(){
             }
             fragmentManager?.beginTransaction()
                 ?.replace(R.id.fragmentContainer,currencyFragment)
+                ?.addToBackStack(null)
+                ?.commit()
+        }
+
+        webViewBtn.setOnClickListener {
+            fragmentManager?.beginTransaction()
+                ?.replace(R.id.fragmentContainer,webViewFragment)
                 ?.addToBackStack(null)
                 ?.commit()
         }

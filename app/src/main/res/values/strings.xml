@@ -6,5 +6,6 @@
     <string name="euroBtn">Евро</string>
     <string name="currenyFragmentTitleUsd">USD</string>
     <string name="currenyFragmentTitleEUR">EUR</string>
+    <string name="web">Web</string>
 
 </resources>
