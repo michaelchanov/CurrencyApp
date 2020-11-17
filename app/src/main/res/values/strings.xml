@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Currency</string>
     <string name="currency">%s рублей  </string>
-    <string name="title">Текущий курс рубля</string>
+    <string name="title1">Текущий</string>
+    <string name="title2">курс</string>
+    <string name="title3">рубля</string>
     <string name="dollarBtn">Доллар</string>
     <string name="euroBtn">Евро</string>
     <string name="currenyFragmentTitleUsd">USD</string>

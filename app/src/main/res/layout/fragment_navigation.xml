@@ -1,55 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/exchange">
+    android:background="#718CD1">
     <TextView
         android:id="@+id/firstText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/buttonPanel"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="150dp"
-        android:text="@string/title"
-        android:textStyle="bold|italic"
+        android:text="@string/title1"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
-        android:textColor="@android:color/primary_text_dark_nodisable"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="90dp"
         />
-<LinearLayout
-    android:id="@+id/buttonPanel"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:layout_constraintTop_toBottomOf="@id/firstText"
-    app:layout_constraintBottom_toBottomOf="parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    >
-    <Button
-        android:id="@+id/dollarBtn"
-        android:layout_width="100dp"
+    <TextView
+        android:id="@+id/secondText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dollarBtn"
+        android:text="@string/title2"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"
+        android:layout_marginStart="15dp"
         />
-    <Button
-        android:id="@+id/euroBtn"
-        android:layout_width="100dp"
+    <TextView
+        android:id="@+id/thirdText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/euroBtn"
+        android:text="@string/title3"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"
+        android:layout_marginStart="100dp"
         />
-    <Button
-        android:id="@+id/webViewBtn"
-        android:layout_width="100dp"
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/web"
-        />
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="220dp">
+
+        <Button
+            android:background="#000000"
+            android:id="@+id/dollarBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dollarBtn"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/euroBtn"
+            android:background="#FFFFFF"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/euroBtn"
+            android:textColor="#000000"/>
 
 
-
-
-
-</LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</FrameLayout>
