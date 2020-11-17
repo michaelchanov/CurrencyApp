@@ -27,4 +27,3 @@ The following technologies are used:
 
 -multithreading
 
--WebView
